@@ -49,7 +49,7 @@ node ace make:controller users
 -
 //criação rapida de controller
 -
-node ace make:model Produto
+node ace make:model nome -m -c
 -
 //Cria uma model
 

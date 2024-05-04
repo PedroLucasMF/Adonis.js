@@ -1,10 +1,10 @@
 import { DateTime } from 'luxon'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
 
-export default class Cliente extends BaseModel {
+export default class Funcionario extends BaseModel {
   @column({ isPrimary: true })
-  declare id: Number
-  
+  declare id: number
+
   @column()
   declare nome:string
 
@@ -15,7 +15,10 @@ export default class Cliente extends BaseModel {
   declare email:string
 
   @column()
-  declare telefone:string
+  declare telefone: string
+  
+  @column()
+  declare sexo:string
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

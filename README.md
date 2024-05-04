@@ -13,7 +13,7 @@
 node ace migration:run
 node ace make:migration Produto
 node ace migration:rollback
-node ace migration: refresh //apaga completamente o banco e refaz ele, n usar de jeito nenhum
+node ace migration:refresh //apaga completamente o banco e refaz ele, n usar de jeito nenhum
 
 ---
 npm init adonisjs@latest hello-world
@@ -64,3 +64,14 @@ node ace list:routes
 //inves de cadastrar cada um dos routes usando get, put, post etc bote resource que ele criara tds as routes, sendo necessario apenas que vc crie os metados, usando .apionly() é criado apenas routes de modo api, as de metado web são ignoradas. exemplo a abaixo
 -
 router.resource('/users', UsersController)
+
+#Seeder
+
+node ace make:seeder nome
+//Cria a seeders para alientar o banco automatico
+
+node ace db:seed
+//alimenta o banco com os registros mandados
+
+node ace migration:refresh --seed
+//reinicia o banco mas envia a migration e a seed

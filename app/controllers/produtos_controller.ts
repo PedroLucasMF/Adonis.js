@@ -6,7 +6,4 @@ export default class ProdutosController {
     async index(){
         return await Produto.all()
     }
-    async store(){
-        return [3,2,1]
-    }
 }

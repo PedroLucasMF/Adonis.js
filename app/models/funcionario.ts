@@ -16,6 +16,9 @@ export default class Funcionario extends BaseModel {
 
   @column()
   declare telefone: string
+
+  @column()
+  declare cargo_id: Number
   
   @column()
   declare sexo:string

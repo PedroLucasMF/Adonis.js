@@ -6,6 +6,11 @@ export default class extends BaseSchema {
   async up() {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id')
+      table.string('nome')
+      table.string('cpf')
+      table.string('email')
+      table.string('telefone')
+
 
       table.timestamp('created_at')
       table.timestamp('updated_at')

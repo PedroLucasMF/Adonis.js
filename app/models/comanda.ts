@@ -12,6 +12,15 @@ export default class Comanda extends BaseModel {
   declare nome:string
 
   @column()
+  declare cliente_id:Number
+
+  @column()
+  declare funcionario_id:Number
+
+  @column()
+  declare pagamento_id:Number
+
+  @column()
   declare dt_Pag: DateTime
 
   @column.dateTime({ autoCreate: true })

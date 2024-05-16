@@ -12,13 +12,13 @@ export default class Comanda extends BaseModel {
   declare nome:string
 
   @column()
-  declare cliente_id:Number
+  declare clienteId:Number
 
   @column()
-  declare funcionario_id:Number
+  declare funcionarioId:Number
 
   @column()
-  declare pagamento_id:Number
+  declare pagamentoId:Number
 
   @column()
   declare dt_Pag: DateTime

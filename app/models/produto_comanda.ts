@@ -9,10 +9,10 @@ export default class ProdutoComanda extends BaseModel {
   declare quantidade: Number
 
   @column()
-  declare comanda_id:Number
+  declare comandaId:Number
 
   @column()
-  declare produto_id:Number
+  declare produtoId:Number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

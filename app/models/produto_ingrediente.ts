@@ -9,7 +9,7 @@ export default class ProdutoIngrediente extends BaseModel {
   declare produto_id: number
 
   @column()
-  declare ingredientes_id: number
+  declare ingrediente_id: number
 
   @column.dateTime({ autoCreate: true })
   declare createdAt: DateTime

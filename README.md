@@ -75,3 +75,15 @@ node ace db:seed
 
 node ace migration:refresh --seed
 //reinicia o banco mas envia a migration e a seed
+
+---
+# Relacionamento
+
+@belongsTo(()=>Tabela)
+declare tabela: BelongsTo<typeof Tabela>
+-
+Usar isso para criar relacionamento e importar a coisa pedida
+-
+import type { BelongsTo } from '@adonisjs/lucid/types/relations'
+-
+para fazer um que tem varios se utiliza o HasMany no lugar de BelongsTo
